@@ -40,7 +40,7 @@ def main(username='', password='', file='', b64=False, mail_notify=False, mail_u
 					break
 		except Exception as e:
 			msg_hist += log('Operation failed, retrying in 3s. "{}"'.format(e), status=False) + '\n'
-			sleep(3)
+			sleep(10)
 	else:
 		status = False
 

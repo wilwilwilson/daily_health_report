@@ -1,6 +1,10 @@
 # 自动每日健康打卡程序
 
-近日对该高校的统一身份认证协议进行了解析，并开发出了基于python的自动健康打卡程序（不熟悉的用户可以使用[旧版](https://github.com/AnnyTerfect/daily_health_attendance/blob/master/README_old.md)）
+## 更新内容
+
+1. 将认证和打卡模块分离
+2. 打卡增加新的项目“是否离宁”和“核酸时间”
+3. 增加OCR识别验证码
 
 ## 安装
 
