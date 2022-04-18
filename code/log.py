@@ -11,3 +11,4 @@ def log(msg, status=None):
 		msg = '[Failed] ' + msg
 	print(msg)
 	syslog.syslog(msg)
+	return msg
