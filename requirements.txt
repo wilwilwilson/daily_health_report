@@ -1,3 +1,4 @@
 requests
 js2py
 fire
+ddddocr
