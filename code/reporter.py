@@ -3,6 +3,8 @@ from datetime import datetime
 
 class Reporter:
 	def __init__(self, sess, force=False, location='中国江苏省南京市栖霞区仙林大道'):
+		sess.headers['Referer'] = 'http://ehallapp.nju.edu.cn/xgfw/sys/mrjkdkappnju/index.html'
+
 		self.get_list_url = 'http://ehallapp.nju.edu.cn/xgfw/sys/yqfxmrjkdkappnju/apply/getApplyInfoList.do'
 		self.report_url = 'https://ehallapp.nju.edu.cn/xgfw/sys/yqfxmrjkdkappnju/apply/saveApplyInfos.do'
 		self.sess = sess

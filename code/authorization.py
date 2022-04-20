@@ -24,7 +24,7 @@ class Authorization:
 			'rmShown': 1
 		}
 		self.sess = requests.session()
-		self.sess.headers['User-Agent'] = 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
+		self.sess.headers['User-Agent'] = 'cpdaily/9.0.14  wisedu/9.0.14'
 
 	def prepare_login_data(self):
 		login_res = self.sess.get(self.login_url)
