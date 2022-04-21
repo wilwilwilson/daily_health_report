@@ -1,0 +1,24 @@
+name: "Daily Health Report"
+
+on: 
+    push:
+    schedule:
+      - cron: "0 13 * * *"
+
+jobs:
+  report:
+    name: Report
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+    - name: Add conda to system path
+      run: echo $CONDA/bin >> $GITHUB_PATH
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    - name: Report
+      run: bash ./adhr
