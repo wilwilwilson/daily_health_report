@@ -24,7 +24,7 @@ class Authorization:
 			'rmShown': 1
 		}
 		self.sess = requests.session()
-		self.sess.headers['User-Agent'] = 'cpdaily/9.0.14  wisedu/9.0.14'
+		self.sess.headers['User-Agent'] = 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36 cpdaily/9.0.14  wisedu/9.0.14'
 
 	def prepare_login_data(self):
 		login_res = self.sess.get(self.login_url)
